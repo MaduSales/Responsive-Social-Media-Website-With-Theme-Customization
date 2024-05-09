@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NokoSocial é uma Rede Social Web Responsiva feita em HTML,CSS e JavaScript">
+    <title>nokoSocial</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/16b6439343.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+
+        <div class="container">
+            <h2 class="logo"><img class="logo" src="assets/img/logo.png" alt="Logo">nokoSocial</h2>
+            <div class="search-bar"><i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" placeholder="Busque por inspirações, criadores e projetos">
+        </div>
+
+        <div class="create">
+            <label class="btn btn-primary" for="#create-post">Criar</label>
+                <div class="profile-picture">
+                    <img src="assets/img/profile-1.jpg" alt="Imagem de perfil">
+                </div>
+        
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="left">
+                <a class="profile">
+                    <div class="profile-picture">
+                        <img src="assets/img/profile-1.jpg" alt="Imagem de perfil">
+                    </div>
+                    <div class="handle">
+                        <h4>Diana Ayi</h4>
+                        <p class="text-muted">@dayi</p>
+                    </div>
+                 </a>
+                 <div class="sidebar">
+                    <a class="menu-item active">
+                        <span><i class="fa-solid fa-house"></i></span> <h3> Home</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="fa-solid fa-compass"></i></span> <h3> Explorar</h3>
+                    </a>
+                    <a class="menu-item" id="notifications">
+                        <span><i class="fa-solid fa-bell"><small class="notification-count"> +9</small></i></span> <h3>Notificações</h3>
+                        <!---PopUp-->
+                        <div class="notifications-popup">
+                        <div>
+                            <div class="profile-picture">
+                                <img src="assets/img/profile-2.jpg" alt="Imagem de perfil">
+                            </div>
+                            <div class="notification-body">
+                                <b>Alex Sill</b> aceitou a sua solicitação de amizade
+                                <small class="text-muted">Agora</small>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="profile-picture">
+                                <img src="assets/img/profile-3.jpg" alt="Imagem de perfil">
+                            </div>
+                            <div class="notification-body">
+                                <b>Sara Turner</b> comentou a sua publicação
+                                <small class="text-muted">12 minutos atrás</small>
+                            </div>
+                        </div>
+                    
+                    <div>
+                        <div class="profile-picture">
+                            <img src="assets/img/profile-4.jpg" alt="Imagem de perfil">
+                        </div>
+                        <div class="notification-body">
+                            <b>Julia Mendell</b> salvou a sua publicação
+                            <small class="text-muted">20 minutos atrás</small>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="profile-picture">
+                            <img src="assets/img/profile-5.jpg" alt="Imagem de perfil">
+                        </div>
+                        <div class="notification-body">
+                            <b>Janet Tray</b> respondeu o seu comentário
+                            <small class="text-muted">43 minutos atrás</small>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="profile-picture">
+                            <img src="assets/img/profile-6.jpg" alt="Imagem de perfil">
+                        </div>
+                        <div class="notification-body">
+                            <b>Amanda R.</b> começou a te seguir
+                            <small class="text-muted"> Há 1 hora</small>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="profile-picture">
+                            <img src="assets/img/profile-7.jpg" alt="Imagem de perfil">
+                        </div>
+                        <div class="notification-body">
+                            <b>Yoko Tenn</b> reagiu a sua publicação
+                            <small class="text-muted"> Há 2 dias</small>
+                        </div>
+                    </div>
+                </div>
+                    </a>
+                    <a class="menu-item"  id="messages-notifications">
+                        <span><i class="fa-solid fa-envelope "> <small class="notification-count">+6</small></i></span> <h3> Mensagens</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="fa-solid fa-bookmark"></i></span> <h3> Salvos</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="fa-solid fa-chart-simple"></i></i></span> <h3> Análises</h3>
+                    </a>
+                    <a class="menu-item" id="theme">
+                        <span><i class="fa-solid fa-palette"></i></span> <h3> Tema</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="fa-solid fa-ellipsis-vertical"></i></span> <h3> Configurações</h3>
+                    </a>
+                 </div>
+                 <!--Fim da sidebar-->
+                 <label for="create-post" class="btn btn-primary">Criar post</label>
+            </div>
+
+            <div class="middle">
+                <div class="stories">
+                    <div class="story">
+                        <div class="profile-picture">
+                            <img src="assets/img/profile-1.jpg" alt="Imagem de perfil">
+                        </div>
+                        <p class="name">Seu Story</p>
+                    </div>
+                        <div class="story">
+                            <div class="profile-picture">
+                                <img src="assets/img/profile-9.jpg" alt="Imagem de perfil">
+                            </div>
+                            <p class="name">Mila Claw</p>
+                        </div>
+
+                            <div class="story">
+                                <div class="profile-picture">
+                                    <img src="assets/img/profile-10.jpg" alt="Imagem de perfil">
+                                </div>
+                                <p class="name">Jay Doe</p>
+                            </div>
+    
+                                <div class="story">
+                                    <div class="profile-picture">
+                                        <img src="assets/img/profile-11.jpg" alt="Imagem de perfil">
+                                    </div>
+                                    <p class="name">Alana May</p>
+                                </div>
+        
+                                    <div class="story">
+                                        <div class="profile-picture">
+                                            <img src="assets/img/profile-12.jpg" alt="Imagem de perfil">
+                                        </div>
+                                        <p class="name">Lia Clark</p>
+                                    </div>
+            
+                                        <div class="story">
+                                            <div class="profile-picture">
+                                                <img src="assets/img/profile-4.jpg" alt="Imagem de perfil">
+                                            </div>
+                                            <p class="name">Sam Rose</p>
+                                        </div>
+                </div>
+                <form class="create-post">
+                    <div class="profile-picture">
+                        <img src="assets/img/profile-1.jpg" alt="Imagem de perfil">
+                    </div>
+                    <input type="text" placeholder="Compartilhe algo com a sua rede" id="create-post">
+                    <input type="submit" value="Postar" class="btn btn-primary">
+                </form>
+
+            <div class="feeds">
+                <div class="feed">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-picture">
+                                <img src="assets/img/profile-13.jpg" alt="Imagem de perfil">
+                            </div>
+                            <div class="info">
+                                <h3>Delli Gil</h3>
+                                <small>Ibirapuera, 3 minutos atrás</small>
+                            </div>
+                        </div>
+                        <span class="edit">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </span>
+                    </div>
+                    <div class="photo">
+                        <img src="assets/img/feed-3.jpg" alt="Foto do feed">
+                    </div>
+                    <div class="action-buttons">
+                        <div class="interaction-buttons">
+                            <span> <i class="fa-regular fa-heart"></i></span>
+                            <span> <i class="fa-regular fa-comment"></i></span>
+                            <span> <i class="fa-solid fa-retweet"></i></span>
+                        </div>
+                        <div class="bookmark">
+                            <span><i class="fa-regular fa-bookmark"></i></span>
+                        </div>
+                    </div>
+                    <div class="liked-by">
+                        <span><img src="assets/img/profile-10.jpg" alt="Foto de perfil"></span>
+                        <span><img src="assets/img/profile-4.jpg" alt="Foto de perfil"></span>
+                        <span><img src="assets/img/profile-15.jpg" alt="Foto de perfil"></span>
+                        <p>Curtido por <b>Mila Claw</b> e outras 3.401 pessoas</p>
+                    </div>
+                    <div class="caption">
+                        <p><b>Delli Gil</b> A vida é feita de momentos como esse 🍀 <span>#lifestyle</span></p>
+                    </div>
+                    <div class="comments text-muted">Ver todos os 100 comentários</div>
+                </div>
+
+
+                <div class="feed">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-picture">
+                                <img src="assets/img/profile-1.jpg" alt="Imagem de perfil">
+                            </div>
+                            <div class="info">
+                                <h3>Diana Ayi</h3>
+                                <small>Miami, 15 minutos atrás</small>
+                            </div>
+                        </div>
+                        <span class="edit">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </span>
+                    </div>
+                    <div class="photo">
+                        <img src="assets/img/feed-1.jpg" alt="Foto do feed">
+                    </div>
+
+
+                    <div class="action-buttons">
+                        <div class="interaction-buttons">
+                            <span> <i class="fa-regular fa-heart"></i></span>
+                            <span> <i class="fa-regular fa-comment"></i></span>
+                            <span> <i class="fa-solid fa-retweet"></i></span>
+                        </div>
+
+
+                        <div class="bookmark">
+                            <span><i class="fa-regular fa-bookmark"></i></span>
+                        </div>
+                    </div>
+                    <div class="liked-by">
+                        <span><img src="assets/img/profile-11.jpg" alt="Foto de perfil"></span>
+                        <span><img src="assets/img/profile-15.jpg" alt="Foto de perfil"></span>
+                        <span><img src="assets/img/profile-20.jpg" alt="Foto de perfil"></span>
+                        <p>Curtido por <b>John Doe</b> e outras 207 pessoas</p>
+                    </div>
+                    <div class="caption">
+                        <p><b>Diana Ayi</b> O melhor natal ao lado de quem amo! <span>#christmas</span> <span>#feliznatal</span></p>
+                    </div>
+                    <div class="comments text-muted">Ver todos os 50 comentários</div>
+                </div>
+
+
+                <div class="feed">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-picture">
+                                <img src="assets/img/profile-18.jpg" alt="Imagem de perfil">
+                            </div>
+                            <div class="info">
+                                <h3>Tiago Batista</h3>
+                                <small>São Paulo, 22 minutos atrás</small>
+                            </div>
+                        </div>
+                        <span class="edit">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </span>
+                    </div>
+                    <div class="photo">
+                        <img src="assets/img/feed-7.jpg" alt="Foto do feed">
+                    </div>
+
+
+                    <div class="action-buttons">
+                        <div class="interaction-buttons">
+                            <span> <i class="fa-regular fa-heart"></i></span>
+                            <span> <i class="fa-regular fa-comment"></i></span>
+                            <span> <i class="fa-solid fa-retweet"></i></span>
+                        </div>
+
+
+                        <div class="bookmark">
+                            <span><i class="fa-regular fa-bookmark"></i></span>
+                        </div>
+                    </div>
+                    <div class="liked-by">
+                        <span><img src="assets/img/profile-10.jpg" alt="Foto de perfil"></span>
+                        <span><img src="assets/img/profile-4.jpg" alt="Foto de perfil"></span>
+                        <span><img src="assets/img/profile-15.jpg" alt="Foto de perfil"></span>
+                        <p>Curtido por <b>Ana Carmosin</b> e outras 1.286 pessoas</p>
+                    </div>
+                    <div class="caption">
+                        <p><b>Tiago Batista</b> Aprendi muito com a palestra de ontem com a <span>@Ana Carmosin</span>. Muito obrigada! <span>#processos</span></p>
+                    </div>
+                    <div class="comments text-muted">Ver todos os 419 comentários</div>
+                </div>
+
+
+                <div class="feed">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-picture">
+                                <img src="assets/img/profile-5.jpg" alt="Imagem de perfil">
+                            </div>
+                            <div class="info">
+                                <h3>Janet Tray</h3>
+                                <small>Itália, 30 minutos atrás</small>
+                            </div>
+                        </div>
+                        <span class="edit">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </span>
+                    </div>
+                    <div class="photo">
+                        <img src="assets/img/feed-2.jpg" alt="Foto do feed">
+                    </div>
+
+
+                    <div class="action-buttons">
+                        <div class="interaction-buttons">
+                            <span> <i class="fa-regular fa-heart"></i></span>
+                            <span> <i class="fa-regular fa-comment"></i></span>
+                            <span> <i class="fa-solid fa-retweet"></i></span>
+                        </div>
+
+
+                        <div class="bookmark">
+                            <span><i class="fa-regular fa-bookmark"></i></span>
+                        </div>
+                    </div>
+                    <div class="liked-by">
+                        <span><img src="assets/img/profile-19.jpg" alt="Foto de perfil"></span>
+                        <span><img src="assets/img/profile-1.jpg" alt="Foto de perfil"></span>
+                        <span><img src="assets/img/profile-4.jpg" alt="Foto de perfil"></span>
+                        <p>Curtido por <b>Joshua Grey</b> e outras 5.900 pessoas</p>
+                    </div>
+                    <div class="caption">
+                        <p><b>Janet Tray</b> Gostei mais de mim quando gostei de você. ❤️</p>
+                    </div>
+                    <div class="comments text-muted">Ver todos os 1.000 comentários</div>
+                </div>
+
+                <div class="feed">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-picture">
+                                <img src="assets/img/profile-8.jpg" alt="Imagem de perfil">
+                            </div>
+                            <div class="info">
+                                <h3>Kellan M.</h3>
+                                <small>Av. Paulista, há 1 hora</small>
+                            </div>
+                        </div>
+                        <span class="edit">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </span>
+                    </div>
+                    <div class="photo">
+                        <img src="assets/img/feed-5.jpg" alt="Foto do feed">
+                    </div>
+
+
+                    <div class="action-buttons">
+                        <div class="interaction-buttons">
+                            <span> <i class="fa-regular fa-heart"></i></span>
+                            <span> <i class="fa-regular fa-comment"></i></span>
+                            <span> <i class="fa-solid fa-retweet"></i></span>
+                        </div>
+
+
+                        <div class="bookmark">
+                            <span><i class="fa-regular fa-bookmark"></i></span>
+                        </div>
+                    </div>
+                    <div class="liked-by">
+                        <span><img src="assets/img/profile-4.jpg" alt="Foto de perfil"></span>
+                        <span><img src="assets/img/profile-6.jpg" alt="Foto de perfil"></span>
+                        <span><img src="assets/img/profile-7.jpg" alt="Foto de perfil"></span>
+                        <p>Curtido por <b>Emy Hammet</b> e outras 159 pessoas</p>
+                    </div>
+                    <div class="caption"> <b>Kellan M.</b> +1 um trampo pra conta, o hoje pode ser surpreendente</p>
+                     <span>#foco</span></div>
+                    <div class="comments text-muted">Ver todos os 30 comentários</div>
+                </div>
+
+
+                <div class="feed">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-picture">
+                                <img src="assets/img/profile-17.jpg" alt="Imagem de perfil">
+                            </div>
+                            <div class="info">
+                                <h3>Camis Brithon</h3>
+                                <small>Califórnia, há 2 horas</small>
+                            </div>
+                        </div>
+                        <span class="edit">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </span>
+                    </div>
+                    <div class="photo">
+                        <img src="assets/img/feed-4.jpg" alt="Foto do feed">
+                    </div>
+
+
+                    <div class="action-buttons">
+                        <div class="interaction-buttons">
+                            <span> <i class="fa-regular fa-heart"></i></span>
+                            <span> <i class="fa-regular fa-comment"></i></span>
+                            <span> <i class="fa-solid fa-retweet"></i></span>
+                        </div>
+
+
+                        <div class="bookmark">
+                            <span><i class="fa-regular fa-bookmark"></i></span>
+                        </div>
+                    </div>
+                    <div class="liked-by">
+                        <span><img src="assets/img/profile-6.jpg" alt="Foto de perfil"></span>
+                        <span><img src="assets/img/profile-10.jpg" alt="Foto de perfil"></span>
+                        <span><img src="assets/img/profile-20.jpg" alt="Foto de perfil"></span>
+                        <p>Curtido por <b>Janne May</b> e outras 7.907 pessoas</p>
+                    </div>
+                    <div class="caption">
+                        <p><b>Camis Brithon</b> É assim que gosto de viver: livre e em lugares que me tragam paz <span>#friendship</span></p>
+                    </div>
+                    <div class="comments text-muted">Ver todos os 896 comentários</div>
+                </div>
+
+                <div class="feed">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-picture">
+                                <img src="assets/img/profile-20.jpg" alt="Imagem de perfil">
+                            </div>
+                            <div class="info">
+                                <h3>Amelie Claire</h3>
+                                <small>nokoSocial Office, há 1 dia</small>
+                            </div>
+                        </div>
+                        <span class="edit">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </span>
+                    </div>
+                    <div class="photo">
+                        <img src="assets/img/feed-6.jpg" alt="Foto do feed">
+                    </div>
+
+
+                    <div class="action-buttons">
+                        <div class="interaction-buttons">
+                            <span> <i class="fa-regular fa-heart"></i></span>
+                            <span> <i class="fa-regular fa-comment"></i></span>
+                            <span> <i class="fa-solid fa-retweet"></i></span>
+                        </div>
+
+
+                        <div class="bookmark">
+                            <span><i class="fa-regular fa-bookmark"></i></span>
+                        </div>
+                    </div>
+                    <div class="liked-by">
+                        <span><img src="assets/img/profile-7.jpg" alt="Foto de perfil"></span>
+                        <span><img src="assets/img/profile-5.jpg" alt="Foto de perfil"></span>
+                        <span><img src="assets/img/profile-9.jpg" alt="Foto de perfil"></span>
+                        <p>Curtido por <b>Sam Rose</b> e outras 3.900 pessoas</p>
+                    </div>
+                    <div class="caption">
+                        <p><b>Amelie Claire</b> Já parou para pensar o que seria de nós sem o avanço da tecnologia? <span>#tech</span> <span>#developer</span></p>
+                    </div>
+                    <div class="comments text-muted">Ver todos os 7.000 comentários</div>
+                </div>
+            </div>
+        </div>
+
+            <div class="right">
+                <div class="messages">
+                    <div class="heading">
+                        <div class="h4">Mensagens</div><i class="fa-regular fa-pen-to-square"></i>
+                    </div>
+
+                    <div class="search-bar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="search" placeholder="Pesquisar mensagens" id="message-search">
+                    </div>
+
+                    <div class="category">
+                        <h6 class="active">Recentes</h6>
+                        <h6>Geral</h6>
+                        <h6 class="message-requests">Solicitações(4)</h6>
+                    </div>
+
+                    <!--Message-->
+                    <div class="message">
+                        <div class="profile-picture">
+                            <img src="assets/img/profile-17.jpg" alt="Imagem de perfil">
+                        </div>
+                    <div class="message-body">
+                            <h5>Camis Brithon</h5>
+                             <p class="text-muted">Olá!</p>
+                        </div>
+                     </div>
+
+                     <div class="message">
+                        <div class="profile-picture">
+                            <img src="assets/img/profile-19.jpg" alt="Imagem de perfil">
+                        </div>
+                    <div class="message-body">
+                            <h5>Andy Thomaz</h5>
+                             <p class="text-bold">2 novas mensagens</p>
+                        </div>
+                     </div>
+
+                     <div class="message">
+                        <div class="profile-picture">
+                            <img src="assets/img/profile-3.jpg" alt="Imagem de perfil">
+                            <div class="active"></div>
+                        </div>
+                    <div class="message-body">
+                            <h5>Andrea Muler</h5>
+                             <p class="text-muted">Interessante</p>
+                        </div>
+                     </div>
+
+                     <div class="message">
+                        <div class="profile-picture">
+                            <img src="assets/img/profile-4.jpg" alt="Imagem de perfil">
+                            
+                        </div>
+                    <div class="message-body">
+                            <h5>Sam Rose</h5>
+                             <p class="text-muted">O meu livro saiu!</p>
+                        </div>
+                     </div>
+
+                     <div class="message">
+                        <div class="profile-picture">
+                            <img src="assets/img/profile-20.jpg" alt="Imagem de perfil">
+                            <div class="active"></div>
+                        </div>
+                    <div class="message-body">
+                            <h5>Amelie Claire</h5>
+                             <p class="text-muted">Como faço para...</p>
+                        </div>
+                     </div>
+
+                     <div class="message">
+                        <div class="profile-picture">
+                            <img src="assets/img/profile-16.jpg" alt="Imagem de perfil">
+                            <div class="active"></div>
+                        </div>
+                    <div class="message-body">
+                            <h5>Jane W.</h5>
+                             <p class="text-muted">Será maravilhoso</p>
+                        </div>
+                     </div>
+                </div>
+
+                
+                  
+
+
+
+                <div class="friend-requests">
+                    <h4>Solicitações</h4>
+                    <div class="request">
+                    <div class="info">
+                        <div class="profile-picture">
+                            <img src="assets/img/profile-16.jpg" alt="Imagem de perfil">
+                        </div>
+                        <div>
+                            <h5>Jane W.</h5>
+                            <p class="text-muted">
+                                10 amigos em comum
+                            </p>
+                            
+                        </div>
+                    </div>
+                    <div class="action">
+                        <button class="btn btn-primary">Aceitar</button>
+                        <button class="btn">Excluir</button>
+                    </div>
+                </div>
+
+                <div class="request">
+                    <div class="info">
+                        <div class="profile-picture">
+                            <img src="assets/img/profile-10.jpg" alt="Imagem de perfil">
+                        </div>
+                        <div>
+                            <h5>Jay Doe</h5>
+                            <p class="text-muted">
+                                8 amigos em comum
+                            </p>
+                            
+                        </div>
+                    </div>
+                    <div class="action">
+                        <button class="btn btn-primary">Aceitar</button>
+                        <button class="btn">Excluir</button>
+                    </div>
+                </div>
+
+                <div class="request">
+                    <div class="info">
+                        <div class="profile-picture">
+                            <img src="assets/img/profile-6.jpg" alt="Imagem de perfil">
+                        </div>
+                        <div>
+                            <h5>Ashley Core</h5>
+                            <p class="text-muted">
+                                0 amigos em comum
+                            </p>
+                            
+                        </div>
+                    </div>
+                    <div class="action">
+                        <button class="btn btn-primary">Aceitar</button>
+                        <button class="btn">Excluir</button>
+                    </div>
+                </div>
+
+                
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="customize-theme">
+        <div class="card">
+            <h2>Personalize a sua rede!</h2>
+            <p class="text-muted">Defina o tamanho da fonte, cores e tema escuro ou claro</p>
+            
+            <div class="font-size">
+                <h2>Tamanho da Fonte</h2>
+            <div>
+            <h6>Aa</h6>
+            <div class="choose-size">
+                <span class="font-size-1"></span>
+                <span class="font-size-2 active"></span>
+                <span class="font-size-3"></span>
+                <span class="font-size-4"></span>
+                <span class="font-size-5"></span>
+            </div>
+            <h3>Aa</h3>
+        </div>
+        </div>
+
+    <div class="color">
+        <h2>Cor</h2>
+        <div class="choose-color">
+            <span class="color-1 active"></span>
+            <span class="color-2"></span>
+            <span class="color-3"></span>
+            <span class="color-4"></span>
+            <span class="color-5"></span>
+        </div>
+    </div>
+
+    <div class="background">
+        <h2>Tema</h2>
+        <div class="choose-bg">
+            <div class="bg-1 active">
+                <span></span>
+                <h5 for="bg-1">Claro</h5>
+            </div>
+            <div class="bg-2">
+                <span></span>
+                <h5 for="bg-2">Dim</h5>
+            </div>
+            <div class="bg-3">
+                 <span></span>
+                    <h5 for="bg-3">Escuro</h5>
+                </div>
+             </div>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
