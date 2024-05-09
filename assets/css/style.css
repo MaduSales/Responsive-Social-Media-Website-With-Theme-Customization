@@ -57,7 +57,7 @@ body{
 
 .profile-picture{
     width: 2.7rem;
-    aspect-ratio: 1/1; /* <-faz a height e a width terem a mesma proporção, se eu mudar o width, o height se ajusta igual automaticamente. This means that even if the parent container or viewport size changes, the browser will adjust the element's dimensions to maintain the specified width-to-height ratio.*/
+    aspect-ratio: 1/1; 
     border-radius: 50%;
     overflow: hidden;
 }
@@ -68,7 +68,7 @@ img{
 }
 
 .btn{
-    display: inline-block; /* <- mantem o container em linha, mas quebra o conteúdo como se fosse block*/
+    display: inline-block; 
     padding: var(--btn-padding);
     font-weight: 500;
     border-radius: var(--border-radius);
@@ -265,7 +265,7 @@ main .container .left .profile{
     transform: rotate(45deg);
 }
 
-.notifications-popup > div{ /* <- estilizando cada notificação ao invés do contêiner de notificações*/
+.notifications-popup > div{ 
     display: flex;
     align-items: start;
     gap: 1rem;
@@ -429,7 +429,7 @@ main .container .left .profile{
 
 .right{
     height: max-content;
-    position: sticky; /* <- é como um fixed*/
+    position: sticky; 
     top: var(--sticky-top-right);
     bottom: 0;
 }
