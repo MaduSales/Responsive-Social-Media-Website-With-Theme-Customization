@@ -10,7 +10,7 @@ Projeto construído durante o curso PROPROFISSÃO do Instituto PROA
 
 
 ## Acesso
-[](https://madusales.github.io/Responsive-Social-Media-Website-With-Theme-Customization/)
+[(Clique aqui)](https://madusales.github.io/Responsive-Social-Media-Website-With-Theme-Customization/)
 
 ## Tecnologias
 - HTML
