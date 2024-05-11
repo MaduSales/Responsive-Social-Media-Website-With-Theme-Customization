@@ -19,5 +19,5 @@ Projeto construído durante o curso PROPROFISSÃO do Instituto PROA
 - Javascript
 
 ## Contato
-[(LinkedIn)](www.linkedin.com/in/mariaeduardasales)
+[LinkedIn](https://www.linkedin.com/in/mariaeduardasales)
 E-mail: maria.mirandadev@gmail.com
